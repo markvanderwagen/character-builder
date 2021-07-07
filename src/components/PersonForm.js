@@ -47,7 +47,7 @@ const PersonForm = () => {
 		const years = moment().diff(fields.dateOfBirth, "years", false);
 
 		if (years < 18) {
-			alert("Too young!");
+			alert("Too young! You need to be over 18!");
 		} else if (fields.name.concat() === "") {
 			alert("Please add your name!");
 		} else if (fields.surname.concat() === "") {
